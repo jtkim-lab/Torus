@@ -8,7 +8,7 @@ site: http://www.jt-inc.net
 
 ## Description
 
-Rear time operating system for healthcare wearable device
+Real time operating system for healthcare wearable device
 
 ## Testing Device
 
