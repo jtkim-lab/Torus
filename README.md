@@ -17,7 +17,7 @@ Real time operating system for healthcare wearable device
 Follow the below order step by step
 
 1. Format a SD card by FAT file system, and make a partition. The partition set up to 'boot'.
-2. Paste the files on 'boot' directory of our GitHub repository.
+2. Paste the files on 'boot' directory of our GitHub repository to 'boot' partition.
 3. Replace the kernel what you want. Kernel file is 'kernel.img'.
 4. Insert the SD card and power to the device.
 
