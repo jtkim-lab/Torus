@@ -18,7 +18,7 @@ Follow the below order step by step
 
 1. Format a SD card by FAT file system, and make a partition. The partition set up to 'boot'.
 2. Paste the files on 'boot' directory of our GitHub repository to 'boot' partition.
-3. Replace the kernel what you want. Kernel file is 'kernel.img'.
+3. Replace the kernel what you want. Commonly, kernel file is 'kernel.img'.
 4. Insert the SD card and power to the device.
 
 ## Hardware Design
@@ -46,3 +46,9 @@ Refer LICENSE on root directory of our GitHub repository.
 2. [Torus: Second Hardware Design](http://www.youtube.com/watch?v=fc7bXfMnlts)
 3. [Torus: Raspberry Pi Demo Blinking](http://www.youtube.com/watch?v=ta7zYYJ7g0w)
 4. [Torus: Raspberry Pi Demo Blinking with FreeRTOS](http://www.youtube.com/watch?v=-qdcLlvA-QU)
+
+## Related Link
+
+1. http://elinux.org/RPi_Software
+2. https://github.com/jameswalmsley/RaspberryPi-FreeRTOS
+3. https://github.com/raspberrypi/firmware
