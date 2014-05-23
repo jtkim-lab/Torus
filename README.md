@@ -29,6 +29,7 @@ Designs of wearable device is on 'hardware' directory of our GitHub repository.
 
 	/
 		README.md
+		LICENSE
 	/boot
 	/FreeRTOS_kernel
 	/firmware
