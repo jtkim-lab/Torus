@@ -1,0 +1,365 @@
+Archive member included because of file (symbol)
+
+/usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+                              /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o (memcpy)
+/usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                              /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o (memset)
+/usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+                              /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o (strncpy)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RESERVED         0x0000000000000000 0x0000000000008000 r
+INIT_RAM         0x0000000000008000 0x0000000000008000 xrw
+RAM              0x0000000000010000 0x0000000008000000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+LOAD /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.init           0x0000000000008000       0xa4
+ *(.init)
+ .init          0x0000000000008000       0xa4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+                0x0000000000008000                _start
+
+.module_entries
+                0x00000000000080a4        0x0
+                0x00000000000080a4                __module_entries_start = .
+ *(.module_entries)
+ *(.module_entries.*)
+                0x00000000000080a4                __module_entries_end = .
+                0x0000000000000000                __module_entries_size = SIZEOF (.module_entries)
+
+.text           0x0000000000010000     0x4430
+ *(.text)
+ .text          0x0000000000010000      0x338 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+                0x0000000000010000                pxPortInitialiseStack
+                0x0000000000010240                xPortStartScheduler
+                0x000000000001025c                vPortEndScheduler
+                0x0000000000010270                vTickISR
+ .text          0x0000000000010338      0x298 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                0x0000000000010338                vPortISRStartFirstTask
+                0x00000000000103cc                vPortYieldProcessor
+                0x000000000001047c                vFreeRTOS_ISR
+                0x0000000000010528                vPortEnterCritical
+                0x0000000000010568                vPortExitCritical
+ .text          0x00000000000105d0      0x758 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+                0x00000000000105d0                xCoRoutineCreate
+                0x0000000000010738                vCoRoutineAddToDelayedList
+                0x0000000000010ad0                vCoRoutineSchedule
+                0x0000000000010c9c                xCoRoutineRemoveFromEventList
+ .text          0x0000000000010d28      0x288 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+                0x0000000000010d28                vListInitialise
+                0x0000000000010d8c                vListInitialiseItem
+                0x0000000000010db4                vListInsertEnd
+                0x0000000000010e48                vListInsert
+                0x0000000000010f1c                vListRemove
+ .text          0x0000000000010fb0      0xbbc /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+                0x0000000000010fb0                xQueueGenericReset
+                0x00000000000110c4                xQueueGenericCreate
+                0x000000000001118c                xQueueGenericSend
+                0x0000000000011338                xQueueGenericSendFromISR
+                0x0000000000011414                xQueueGenericReceive
+                0x0000000000011620                xQueueReceiveFromISR
+                0x0000000000011700                uxQueueMessagesWaiting
+                0x0000000000011734                uxQueueMessagesWaitingFromISR
+                0x0000000000011764                vQueueDelete
+                0x0000000000011a98                xQueueIsQueueEmptyFromISR
+                0x0000000000011b24                xQueueIsQueueFullFromISR
+ .text          0x0000000000011b6c     0x18dc /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+                0x0000000000011b6c                xTaskGenericCreate
+                0x0000000000011db4                vTaskDelete
+                0x0000000000011eb0                vTaskDelayUntil
+                0x0000000000011fbc                vTaskDelay
+                0x000000000001203c                uxTaskPriorityGet
+                0x0000000000012094                vTaskPrioritySet
+                0x0000000000012238                vTaskSuspend
+                0x0000000000012338                xTaskIsTaskSuspended
+                0x00000000000123b4                vTaskResume
+                0x00000000000124a8                xTaskResumeFromISR
+                0x00000000000125c4                vTaskStartScheduler
+                0x000000000001265c                vTaskEndScheduler
+                0x0000000000012690                vTaskSuspendAll
+                0x00000000000126bc                xTaskResumeAll
+                0x0000000000012860                xTaskGetTickCount
+                0x0000000000012894                xTaskGetTickCountFromISR
+                0x00000000000128cc                uxTaskGetNumberOfTasks
+                0x00000000000128f0                vTaskIncrementTick
+                0x0000000000012b08                vTaskSetApplicationTaskTag
+                0x0000000000012b60                xTaskGetApplicationTaskTag
+                0x0000000000012bbc                xTaskCallApplicationTaskHook
+                0x0000000000012c38                vTaskSwitchContext
+                0x0000000000012d40                vTaskPlaceOnEventList
+                0x0000000000012dd8                xTaskRemoveFromEventList
+                0x0000000000012ef0                vTaskSetTimeOutState
+                0x0000000000012f34                xTaskCheckForTimeOut
+                0x0000000000013028                vTaskMissedYield
+ .text          0x0000000000013448      0x3ec /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+                0x0000000000013488                irqHandler
+                0x000000000001356c                InitInterruptController
+                0x00000000000135e8                RegisterInterrupt
+                0x000000000001366c                EnableInterrupt
+                0x0000000000013738                DisableInterrupt
+                0x0000000000013804                EnableInterrupts
+                0x000000000001381c                DisableInterrupts
+ .text          0x0000000000013834      0x62c /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+                0x0000000000013834                SetGpioFunction
+                0x0000000000013908                SetGpioDirection
+                0x0000000000013938                SetGpio
+                0x00000000000139fc                ReadGpio
+                0x0000000000013a54                EnableGpioDetect
+                0x0000000000013c2c                DisableGpioDetect
+                0x0000000000013e0c                ClearGpioInterrupt
+ .text          0x0000000000013e60      0x498 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x0000000000013e60                pvPortMalloc
+                0x0000000000014024                vPortFree
+                0x000000000001409c                xPortGetFreeHeapSize
+                0x00000000000140c0                vPortInitialiseBlocks
+ .text          0x00000000000142f8       0x18 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+ .text          0x0000000000014310      0x120 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+                0x0000000000014310                task1
+                0x000000000001434c                task2
+                0x0000000000014390                main
+ .text          0x0000000000014430        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000014430        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .text          0x0000000000014430        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+
+.rodata         0x0000000000014430       0x2c
+ .rodata        0x0000000000014430        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .rodata        0x0000000000014434        0x8 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .rodata        0x000000000001443c        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .rodata        0x0000000000014440        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+                0x0000000000014440                pRegs
+ .rodata        0x0000000000014444        0x8 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .rodata        0x000000000001444c       0x10 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.glue_7         0x000000000001445c        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x000000000001445c        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x000000000001445c        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x000000000001445c        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x000000000001445c        0x0
+ .iplt          0x0000000000000000        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+
+.text.memcpy    0x000000000001445c       0xf0
+ .text.memcpy   0x000000000001445c       0xf0 /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+                0x000000000001445c                memcpy
+
+.text.memset    0x000000000001454c       0xf4
+ .text.memset   0x000000000001454c       0xf4 /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                0x000000000001454c                memset
+
+.text.strncpy   0x0000000000014640       0xd4
+ .text.strncpy  0x0000000000014640       0xd4 /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+                0x0000000000014640                strncpy
+
+.rel.dyn        0x0000000000014714        0x0
+ .rel.iplt      0x0000000000000000        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+
+.data           0x0000000000014714        0xc
+ *(.data)
+ .data          0x0000000000014714        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .data          0x0000000000014714        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                0x0000000000014714                ulCriticalNesting
+ .data          0x0000000000014718        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .data          0x0000000000014718        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .data          0x0000000000014718        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .data          0x0000000000014718        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .data          0x000000000001471c        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .data          0x000000000001471c        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .data          0x000000000001471c        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .data          0x0000000000014720        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+ .data          0x0000000000014720        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+ .data          0x0000000000014720        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000014720        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .data          0x0000000000014720        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+
+.igot.plt       0x0000000000014720        0x0
+ .igot.plt      0x0000000000000000        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+
+.bss            0x0000000000014720     0x13d8
+                0x0000000000014720                __bss_start = .
+ *(.bss)
+ .bss           0x0000000000014720        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .bss           0x0000000000014720        0x4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                0x0000000000014720                g_bStarted
+ .bss           0x0000000000014724       0x80 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+                0x0000000000014790                pxCurrentCoRoutine
+ .bss           0x00000000000147a4        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .bss           0x00000000000147a4        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .bss           0x00000000000147a4      0x100 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+                0x00000000000147a4                pxCurrentTCB
+ .bss           0x00000000000148a4      0x240 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .bss           0x0000000000014ae4        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ *fill*         0x0000000000014ae4        0x4 
+ .bss           0x0000000000014ae8     0x1010 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x0000000000015af4                allocated
+ .bss           0x0000000000015af8        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+ .bss           0x0000000000015af8        0x0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+ .bss           0x0000000000015af8        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000015af8        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .bss           0x0000000000015af8        0x0 /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+ *(.bss.*)
+                0x0000000000015af8                __bss_end = .
+                0x0000000008010000                _estack = (ORIGIN (RAM) + 0x8000000)
+LOAD /usr/lib/gcc/arm-none-eabi/4.8.3/libgcc.a
+LOAD /usr/arm-none-eabi/lib/libc.a
+OUTPUT(kernel.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x2928
+ .debug_info    0x0000000000000000      0x1f5 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .debug_info    0x00000000000001f5      0x188 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .debug_info    0x000000000000037d      0x46a /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .debug_info    0x00000000000007e7      0x27f /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .debug_info    0x0000000000000a66      0x71c /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .debug_info    0x0000000000001182      0xd21 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .debug_info    0x0000000000001ea3      0x305 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .debug_info    0x00000000000021a8      0x3f3 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .debug_info    0x000000000000259b      0x2c7 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_info    0x0000000000002862       0xc6 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.debug_abbrev   0x0000000000000000      0xbe5
+ .debug_abbrev  0x0000000000000000      0x11f /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .debug_abbrev  0x000000000000011f       0xbf /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .debug_abbrev  0x00000000000001de      0x185 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .debug_abbrev  0x0000000000000363       0xba /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .debug_abbrev  0x000000000000041d      0x132 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .debug_abbrev  0x000000000000054f      0x1da /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .debug_abbrev  0x0000000000000729      0x175 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .debug_abbrev  0x000000000000089e      0x12f /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .debug_abbrev  0x00000000000009cd      0x199 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_abbrev  0x0000000000000b66       0x7f /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.debug_aranges  0x0000000000000000      0x140
+ .debug_aranges
+                0x0000000000000000       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .debug_aranges
+                0x0000000000000020       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .debug_aranges
+                0x0000000000000040       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .debug_aranges
+                0x0000000000000060       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .debug_aranges
+                0x0000000000000080       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .debug_aranges
+                0x00000000000000a0       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .debug_aranges
+                0x00000000000000c0       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .debug_aranges
+                0x00000000000000e0       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .debug_aranges
+                0x0000000000000100       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_aranges
+                0x0000000000000120       0x20 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.debug_line     0x0000000000000000     0x1117
+ .debug_line    0x0000000000000000      0x148 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .debug_line    0x0000000000000148       0xc6 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .debug_line    0x000000000000020e      0x227 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .debug_line    0x0000000000000435      0x17b /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .debug_line    0x00000000000005b0      0x2c4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .debug_line    0x0000000000000874      0x4c3 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .debug_line    0x0000000000000d37      0x120 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .debug_line    0x0000000000000e57       0xd9 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .debug_line    0x0000000000000f30      0x130 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_line    0x0000000000001060       0xb7 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.debug_str      0x0000000000000000     0x176b
+ .debug_str     0x0000000000000000      0x1d7 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+                                        0x21e (size before relaxing)
+ .debug_str     0x00000000000001d7       0xf1 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                                        0x195 (size before relaxing)
+ .debug_str     0x00000000000002c8      0x374 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+                                        0x45b (size before relaxing)
+ .debug_str     0x000000000000063c      0x11d /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+                                        0x28c (size before relaxing)
+ .debug_str     0x0000000000000759      0x354 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+                                        0x528 (size before relaxing)
+ .debug_str     0x0000000000000aad      0x680 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+                                        0x940 (size before relaxing)
+ .debug_str     0x000000000000112d      0x1c5 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+                                        0x27b (size before relaxing)
+ .debug_str     0x00000000000012f2      0x242 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+                                        0x2f6 (size before relaxing)
+ .debug_str     0x0000000000001534      0x1dc /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+                                        0x2fc (size before relaxing)
+ .debug_str     0x0000000000001710       0x5b /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+                                        0x12e (size before relaxing)
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x70 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .comment       0x0000000000000000       0x71 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+
+.ARM.attributes
+                0x0000000000000000       0x2c
+ .ARM.attributes
+                0x0000000000000000       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .ARM.attributes
+                0x000000000000002e       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .ARM.attributes
+                0x000000000000005c       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .ARM.attributes
+                0x000000000000008a       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .ARM.attributes
+                0x00000000000000b8       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .ARM.attributes
+                0x00000000000000e6       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .ARM.attributes
+                0x0000000000000114       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .ARM.attributes
+                0x0000000000000142       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .ARM.attributes
+                0x0000000000000170       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .ARM.attributes
+                0x000000000000019e       0x14 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/startup.o
+ .ARM.attributes
+                0x00000000000001b2       0x2e /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+ .ARM.attributes
+                0x00000000000001e0       0x30 /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000210       0x30 /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000240       0x30 /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+
+.debug_frame    0x0000000000000000      0xb3c
+ .debug_frame   0x0000000000000000       0x94 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .debug_frame   0x0000000000000094       0x78 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+ .debug_frame   0x000000000000010c       0xd4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/croutine.o
+ .debug_frame   0x00000000000001e0       0x88 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/list.o
+ .debug_frame   0x0000000000000268      0x1c4 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/queue.o
+ .debug_frame   0x000000000000042c      0x3b0 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/FreeRTOS/Source/tasks.o
+ .debug_frame   0x00000000000007dc      0x114 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/interrupts.o
+ .debug_frame   0x00000000000008f0       0xbc /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/Drivers/gpio.o
+ .debug_frame   0x00000000000009ac       0xa8 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_frame   0x0000000000000a54       0x64 /home/jeongtaek/Downloads/RaspberryPi-FreeRTOS-build-140523-2/build/Demo/main.o
+ .debug_frame   0x0000000000000ab8       0x2c /usr/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000ae4       0x2c /usr/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000b10       0x2c /usr/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
