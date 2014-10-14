@@ -21,6 +21,3 @@
 *.x86_64
 *.hex
 
-#Makefiles
-Makefile
-*.mk
