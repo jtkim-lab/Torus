@@ -26,6 +26,10 @@ void task2(void *pParam) {
 	}
 }
 
+void serialTest(void *pParam)
+{
+
+}
 
 /**
  *	This is the systems main entry, some call it a boot thread.
@@ -38,10 +42,10 @@ void main(void) {
 	DisableInterrupts();
 	InitInterruptController();
 
-	SetGpioFunction(8, 1);			// RDY led
+	//SetGpioFunction(8, 1);			// RDY led
 
-	xTaskCreate(task1, "LED_0", 128, NULL, 0, NULL);
-	xTaskCreate(task2, "LED_1", 128, NULL, 0, NULL);
+	//xTaskCreate(task1, "LED_0", 128, NULL, 0, NULL);
+	//xTaskCreate(task2, "LED_1", 128, NULL, 0, NULL);
 
 	vTaskStartScheduler();
 

@@ -42,7 +42,7 @@ LOAD /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/Raspber
                 0x000080a4                __module_entries_end = .
                 0x00000000                __module_entries_size = SIZEOF (.module_entries)
 
-.text           0x00010000     0x4430
+.text           0x00010000     0x43c4
  *(.text)
  .text          0x00010000      0x338 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
                 0x00010000                pxPortInitialiseStack
@@ -128,104 +128,104 @@ LOAD /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/Raspber
                 0x0001409c                xPortGetFreeHeapSize
                 0x000140c0                vPortInitialiseBlocks
  .text          0x000142f8       0x18 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/startup.o
- .text          0x00014310      0x120 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .text          0x00014310       0xb4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
                 0x00014310                task1
                 0x0001434c                task2
-                0x00014390                main
- .text          0x00014430        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
- .text          0x00014430        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .text          0x00014430        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+                0x00014390                serialTest
+                0x000143ac                main
+ .text          0x000143c4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .text          0x000143c4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .text          0x000143c4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
 
-.rodata         0x00014430       0x2c
- .rodata        0x00014430        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
- .rodata        0x00014434        0x8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
- .rodata        0x0001443c        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
- .rodata        0x00014440        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
-                0x00014440                pRegs
- .rodata        0x00014444        0x8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .rodata        0x0001444c       0x10 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+.rodata         0x000143c4       0x1c
+ .rodata        0x000143c4        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .rodata        0x000143c8        0x8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
+ .rodata        0x000143d0        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
+ .rodata        0x000143d4        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
+                0x000143d4                pRegs
+ .rodata        0x000143d8        0x8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
 
-.glue_7         0x0001445c        0x0
+.glue_7         0x000143e0        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x0001445c        0x0
+.glue_7t        0x000143e0        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x0001445c        0x0
+.vfp11_veneer   0x000143e0        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x0001445c        0x0
+.v4_bx          0x000143e0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x0001445c        0x0
+.iplt           0x000143e0        0x0
  .iplt          0x00000000        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
 
-.text.memcpy    0x0001445c       0xf0
- .text.memcpy   0x0001445c       0xf0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
-                0x0001445c                memcpy
+.text.memcpy    0x000143e0       0xf0
+ .text.memcpy   0x000143e0       0xf0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+                0x000143e0                memcpy
 
-.text.memset    0x0001454c       0xf4
- .text.memset   0x0001454c       0xf4 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
-                0x0001454c                memset
+.text.memset    0x000144d0       0xf4
+ .text.memset   0x000144d0       0xf4 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                0x000144d0                memset
 
-.text.strncpy   0x00014640       0xd4
- .text.strncpy  0x00014640       0xd4 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
-                0x00014640                strncpy
+.text.strncpy   0x000145c4       0xd4
+ .text.strncpy  0x000145c4       0xd4 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+                0x000145c4                strncpy
 
-.rel.dyn        0x00014714        0x0
+.rel.dyn        0x00014698        0x0
  .rel.iplt      0x00000000        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
 
-.data           0x00014714        0xc
+.data           0x00014698        0xc
  *(.data)
- .data          0x00014714        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
- .data          0x00014714        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
-                0x00014714                ulCriticalNesting
- .data          0x00014718        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
- .data          0x00014718        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/list.o
- .data          0x00014718        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/queue.o
- .data          0x00014718        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
- .data          0x0001471c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
- .data          0x0001471c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
- .data          0x0001471c        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .data          0x00014720        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/startup.o
- .data          0x00014720        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
- .data          0x00014720        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
- .data          0x00014720        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .data          0x00014720        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+ .data          0x00014698        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .data          0x00014698        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                0x00014698                ulCriticalNesting
+ .data          0x0001469c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
+ .data          0x0001469c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/list.o
+ .data          0x0001469c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/queue.o
+ .data          0x0001469c        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
+ .data          0x000146a0        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
+ .data          0x000146a0        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
+ .data          0x000146a0        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+ .data          0x000146a4        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/startup.o
+ .data          0x000146a4        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .data          0x000146a4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .data          0x000146a4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .data          0x000146a4        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
 
-.igot.plt       0x00014720        0x0
+.igot.plt       0x000146a4        0x0
  .igot.plt      0x00000000        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
 
-.bss            0x00014720     0x13d8
-                0x00014720                __bss_start = .
+.bss            0x000146a8     0x13d8
+                0x000146a8                __bss_start = .
  *(.bss)
- .bss           0x00014720        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
- .bss           0x00014720        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
-                0x00014720                g_bStarted
- .bss           0x00014724       0x80 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
-                0x00014790                pxCurrentCoRoutine
- .bss           0x000147a4        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/list.o
- .bss           0x000147a4        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/queue.o
- .bss           0x000147a4      0x100 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
-                0x000147a4                pxCurrentTCB
- .bss           0x000148a4      0x240 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
- .bss           0x00014ae4        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
- *fill*         0x00014ae4        0x4 
- .bss           0x00014ae8     0x1010 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
-                0x00015af4                allocated
- .bss           0x00015af8        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/startup.o
- .bss           0x00015af8        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
- .bss           0x00015af8        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
- .bss           0x00015af8        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .bss           0x00015af8        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+ .bss           0x000146a8        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
+ .bss           0x000146a8        0x4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
+                0x000146a8                g_bStarted
+ .bss           0x000146ac       0x80 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
+                0x00014718                pxCurrentCoRoutine
+ .bss           0x0001472c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/list.o
+ .bss           0x0001472c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/queue.o
+ .bss           0x0001472c      0x100 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/tasks.o
+                0x0001472c                pxCurrentTCB
+ .bss           0x0001482c      0x240 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
+ .bss           0x00014a6c        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
+ *fill*         0x00014a6c        0x4 
+ .bss           0x00014a70     0x1010 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x00015a7c                allocated
+ .bss           0x00015a80        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/startup.o
+ .bss           0x00015a80        0x0 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .bss           0x00015a80        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .bss           0x00015a80        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .bss           0x00015a80        0x0 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
  *(.bss.*)
-                0x00015af8                __bss_end = .
+                0x00015a80                __bss_end = .
                 0x08010000                _estack = (ORIGIN (RAM) + 0x8000000)
 LOAD /usr/local/gcc-arm-none-eabi-4_8-2014q3/lib/gcc/arm-none-eabi/4.8.4/libgcc.a
 LOAD /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a
 OUTPUT(kernel.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x2972
+.debug_info     0x00000000     0x2996
  .debug_info    0x00000000      0x1f5 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
  .debug_info    0x000001f5      0x188 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
  .debug_info    0x0000037d      0x46a /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
@@ -235,9 +235,9 @@ OUTPUT(kernel.elf elf32-littlearm)
  .debug_info    0x00001ea3      0x305 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
  .debug_info    0x000021a8      0x3f3 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
  .debug_info    0x0000259b      0x2c7 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_info    0x00002862      0x110 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .debug_info    0x00002862      0x134 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
 
-.debug_abbrev   0x00000000      0xc0a
+.debug_abbrev   0x00000000      0xc24
  .debug_abbrev  0x00000000      0x11f /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
  .debug_abbrev  0x0000011f       0xbf /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
  .debug_abbrev  0x000001de      0x185 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
@@ -247,7 +247,7 @@ OUTPUT(kernel.elf elf32-littlearm)
  .debug_abbrev  0x00000729      0x175 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
  .debug_abbrev  0x0000089e      0x12f /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
  .debug_abbrev  0x000009cd      0x199 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_abbrev  0x00000b66       0xa4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .debug_abbrev  0x00000b66       0xbe /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
 
 .debug_aranges  0x00000000      0x140
  .debug_aranges
@@ -271,7 +271,7 @@ OUTPUT(kernel.elf elf32-littlearm)
  .debug_aranges
                 0x00000120       0x20 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
 
-.debug_line     0x00000000     0x166c
+.debug_line     0x00000000     0x1667
  .debug_line    0x00000000      0x1ac /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
  .debug_line    0x000001ac       0xf8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
  .debug_line    0x000002a4      0x2bd /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
@@ -281,9 +281,9 @@ OUTPUT(kernel.elf elf32-littlearm)
  .debug_line    0x0000106b      0x152 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
  .debug_line    0x000011bd      0x10b /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
  .debug_line    0x000012c8      0x185 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_line    0x0000144d      0x21f /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .debug_line    0x0000144d      0x21a /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
 
-.debug_str      0x00000000     0x19a0
+.debug_str      0x00000000     0x19ab
  .debug_str     0x00000000      0x209 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
                                 0x250 (size before relaxing)
  .debug_str     0x00000209      0x123 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
@@ -302,8 +302,8 @@ OUTPUT(kernel.elf elf32-littlearm)
                                 0x328 (size before relaxing)
  .debug_str     0x000016f6      0x20e /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
                                 0x32e (size before relaxing)
- .debug_str     0x00001904       0x9c /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
-                                0x1b9 (size before relaxing)
+ .debug_str     0x00001904       0xa7 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+                                0x1c4 (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
@@ -349,7 +349,7 @@ OUTPUT(kernel.elf elf32-littlearm)
  .ARM.attributes
                 0x00000240       0x30 /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
 
-.debug_frame    0x00000000      0xb3c
+.debug_frame    0x00000000      0xb54
  .debug_frame   0x00000000       0x94 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/port.o
  .debug_frame   0x00000094       0x78 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/portable/GCC/RaspberryPi/portisr.o
  .debug_frame   0x0000010c       0xd4 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/FreeRTOS/Source/croutine.o
@@ -359,7 +359,7 @@ OUTPUT(kernel.elf elf32-littlearm)
  .debug_frame   0x000007dc      0x114 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/interrupts.o
  .debug_frame   0x000008f0       0xbc /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/Drivers/gpio.o
  .debug_frame   0x000009ac       0xa8 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build//FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_frame   0x00000a54       0x64 /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
- .debug_frame   0x00000ab8       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000ae4       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .debug_frame   0x00000b10       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
+ .debug_frame   0x00000a54       0x7c /home/keunwoo/Documents/warehouse404/Torus/FreeRTOS_Kernel/Demo_LCD/RaspberryPi-FreeRTOS-build-140523-3/build/Demo/main.o
+ .debug_frame   0x00000ad0       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000afc       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .debug_frame   0x00000b28       0x2c /usr/local/gcc-arm-none-eabi-4_8-2014q3/arm-none-eabi/lib/libc.a(lib_a-strncpy.o)
